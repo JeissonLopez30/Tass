@@ -1,0 +1,55 @@
+Comandos generales del sistema:
+
+ls: Lista archivos y directorios.
+cd: Cambia de directorio.
+pwd: Muestra el directorio actual.
+touch: Crea un nuevo archivo vacío.
+mkdir: Crea un nuevo directorio.
+rm: Elimina archivos o directorios.
+cp: Copia archivos o directorios.
+mv: Mueve o renombra archivos o directorios.
+cat: Muestra el contenido de archivos.
+nano o vim: Editores de texto en la terminal.
+ps: Muestra procesos en ejecución.
+kill: Termina procesos.
+sudo: Ejecuta comandos con privilegios de superusuario.
+shutdown: Apaga o reinicia el sistema.
+Gestión de paquetes:
+
+apt-get o apt: Gestiona paquetes y actualizaciones.
+dpkg: Gestiona paquetes DEB.
+snap: Gestiona paquetes Snap.
+Redes y conectividad:
+
+ifconfig o ip: Muestra información de red.
+ping: Prueba la conectividad de red.
+ssh: Acceso seguro a otros sistemas.
+netstat: Muestra estadísticas de red.
+curl o wget: Descargar contenido desde la web.
+Usuarios y permisos:
+
+adduser o useradd: Agrega un nuevo usuario.
+passwd: Cambia la contraseña de un usuario.
+chown: Cambia el propietario de archivos o directorios.
+chmod: Cambia los permisos de archivos o directorios.
+Gestión de servicios:
+
+systemctl: Gestiona servicios y unidades del sistema.
+service: Controla servicios del sistema.
+Archivos y búsqueda:
+
+find: Busca archivos y directorios.
+grep: Busca patrones en archivos de texto.
+locate: Busca archivos rápidamente.
+Compresión y descompresión:
+
+tar: Archivos TAR.
+gzip o gunzip: Compresión y descompresión GZIP.
+zip o unzip: Compresión y descompresión ZIP.
+Otros comandos útiles:
+
+date: Muestra la fecha y hora actual.
+df: Muestra el uso del espacio en disco.
+free: Muestra información de memoria.
+history: Muestra el historial de comandos.
+top o htop: Monitoriza el uso del sistema en tiempo real.
