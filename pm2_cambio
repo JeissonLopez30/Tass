@@ -1,0 +1,13 @@
+Se usan cuando se tiene que hacer un cambio en las API, usualmente se tiene que colocar inmediatamente cuando se haga dicho cambio, lo que hace es que elimina, crea y se visualizan los log de los eventos
+
+API_ADMIN_JFK
+pm2 delete API_ADMIN_JFK; NODE_ENV=development pm2 start nodeAPI_Admin_JFK/server/server.js --name API_ADMIN_JFK --node-args="--max_old_space_size=8172" -o "/dev/null" -e "/dev/null"; clear; pm2 logs API_ADMIN_JFK
+
+
+API_JFK
+pm2 delete API_JFK; NODE_ENV=development pm2 start nodeAPIJFK/server/server.js --name API_JFK --node-args="--max_old_space_size=9172" -o "/dev/null" -e "/dev/null"; clear; pm2 logs API_JFK
+ 
+API_JFK_PSE
+pm2 delete API_JFK_PSE; NODE_ENV=development pm2 start nodeAPIJFK_PSE/server/server.js --name API_JFK_PSE --node-args="--max_old_space_size=9172" -o "/dev/null" -e "/dev/null"; pm2 logs API_JFK_PSE
+
+ 
