@@ -1,0 +1,37 @@
+CONEXIÓN BD Pruebas
+mongo -u adminpruebasBDjfkportal -p adUfWnHfzK --authenticationDatabase admin --port=28913
+
+PRODUCCION Privado
+mongo --host localhost --port 28913 -u adminBDjfkportal -p xgDd65OmWa --authenticationDatabase admin
+ 
+
+MONGODB
+Usuario admin (JFK): colección usuarioadmins
+Usuario cliente: colección usuarios
+
+ 
+CONSULTAR USUARIOS CLIENTES 
+db.usuarios.find({"cedula" : "1036401644"}).pretty().sort({_id: -1})
+
+
+//Se modifica el valor//
+ACTUALIZAR CORREO USUARIO CLIENTES
+db.usuarios.updateOne({"_id" : ObjectId("638e2688516513db10f4e23f")}, {$set: {"email": "coloandres27@gmail.com"}})
+
+ 
+VERIFICAR SMS ENVIADOS A USUARIOS
+db.apismspeticions.find({ "usuario" : "manuel1984"}).pretty().sort({_id:-1})
+
+ 
+
+{
+        "_id" : ObjectId("6511f14bece179031708a7e9"),
+        "metodo" : "login",
+        "usuario" : "manuel1984",
+        "mensaje" : "JFK te informa: acabas de iniciar sesión en el portal transaccional.",
+        "destinatario" : "3057490390",
+        "apiRemite" : "LABS MOBILE",
+        "fecha" : ISODate("2023-09-25T20:44:59.013Z"),
+        "__v" : 0,
+        "fechaEnvio" : ISODate("2023-09-25T20:44:59.357Z")
+}
